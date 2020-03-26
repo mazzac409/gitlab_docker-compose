@@ -1,6 +1,6 @@
 #!/bin/sh
 
-registration_token="Hr1PyiyJK53amV5DGdvf"
+registration_token="<token_value>"
 
 docker exec -it gitlab-runner2 \
   gitlab-runner register \
