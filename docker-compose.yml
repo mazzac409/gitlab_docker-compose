@@ -8,6 +8,7 @@ services:
     environment:
       GITLAB_OMNIBUS_CONFIG: |
         gitlab_rails['gitlab_shell_ssh_port'] = 2222
+        gitlab_rails['packages_enabled'] = true
         registry_external_url 'http://localhost:4567'
         registry['enable'] = true
         unicorn['socket'] = '/opt/gitlab/var/unicorn/gitlab.socket'        
